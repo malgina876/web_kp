@@ -188,6 +188,116 @@ main{
 
 
 
+
+.doctors-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    }
+ .doctors-header {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+.specialists-button {
+   position: absolute;
+   left: 30px;
+    top: 30px;
+   padding: 10px 20px;
+  border: 1px solid white;
+    border-radius: 30px;
+   background-color: transparent;
+  color: white;
+  cursor: pointer;
+   transition: all 0.3s ease;
+ }
+ .specialists-button:hover {
+  background-color: white;
+   color: rgb(255, 255, 255);
+ }
+ .doctors-title {
+   font-size: 2.5rem;
+   margin-bottom: 5px;
+   font-weight: 400;
+    color: white;
+   }
+.doctors-title-sub {
+   display: block;
+    font-size: 1.5rem;
+     font-style: italic;
+    margin-top: 5px;
+ }
+ .doctors-title-years {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+    }
+
+ .doctors-cards {
+  display: flex;
+   justify-content: center;
+   gap: 20px;
+   max-width: 1200px;
+    flex-wrap: wrap;
+   }
+
+ .doctor-card {
+    background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      width: 300px;
+       transition: all 0.3s ease;
+         overflow: hidden;
+       position: relative;
+      }
+
+ .doctor-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+   }
+
+      .doctor-info {
+          position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           display: flex;
+             flex-direction: column;
+           align-items: center;
+           justify-content: center;
+          z-index: 1;
+          color: white;
+         padding: 10px;
+           word-wrap: break-word;
+       }
+
+   .doctor-name {
+       font-size: 1.5rem;
+       font-weight: bold;
+       margin-bottom: 10px;
+        text-align: center;
+     }
+    .doctor-speciality {
+      font-size: 1rem;
+       text-align: center;
+    }
+    .doctor-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+       display: block;
+    }
+
+
+
+
+
+
+
+
+
 section {
     width: 100%;
     height: 100vh;
@@ -229,7 +339,7 @@ section {
     align-items: center;
     justify-content: center;
     z-index: 1;
-      padding: 20px;
+    padding: 20px;
     }
   
 .text-content {
@@ -294,6 +404,10 @@ section {
 
 
 
+
+
+
+
 footer {
     background: #496937; /* Цвет фона */
     color: #fff; /* Цвет текста */
@@ -326,19 +440,17 @@ footer {
     height: 40px;
   }
 .white{
-    position: absolute;
-    width: 600px; 
+    width: 1000px; 
     height: 600px;
-    margin-left: -1000px;
-    margin-top: -500px;  
-    border-radius: 20px;
+    margin-left: -800px;
+    margin-top: -525px;
+    border-radius: 30px;
 }
 .dog{
-    position: absolute; /* Абсолютное позиционирование для наложения */
+    position: absolute; 
     margin-left: -1000px;
     margin-top: -500px;  
-     /* Сдвигаем центр к середине */
-    width: 300px; /* Размер наложенного изображения */
+    width: 300px; 
     height: 200px;
 
 
